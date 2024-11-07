@@ -1,6 +1,15 @@
 import React from 'react'
-import useData from './hooks/useData'
-import user from './components/user'
+import Navbar from './components/Navbar'
+import SignUp from './components/Signup'
+import SignIn from './components/Signin'
+import UserProfile from './components/UserProfile'
+import NotFound from './components/NotFound'
+import Home from './components/Home'
+import About from './components/About'
+import Catagory from './components/Catagory'
+import { Route, Routes } from 'react-router-dom'
+
+
 
 
 
@@ -8,25 +17,38 @@ import user from './components/user'
 
 function App() {
 
-const {name , setName} = useData();
-
-function chng(){
-  setName("Danish")
-}
-
-
-
   return (
     
-      <div className="App">
-        <h1>This is my App</h1>
-        <h1>{name}</h1>
-        <button onClick={chng}>Click Me</button>
+      <>
+      
+      <Navbar/>
+
+      <Routes>
+        <Route path='/' element={<h2>I am a Home</h2>}  />
+        <Route path='home' element={<Home/>}  />
+        <Route path='about' element={<About/>}  />
+        <Route path='catagory' element={<Catagory/>}  />
+        <Route path='signup' element={<SignUp/>}  />
+        <Route path='signin' element={<SignIn/>}  />
+        <Route path='profile' element={<UserProfile/>}  />
+        <Route path='*' element={<NotFound/>}  />
+
+      </Routes>
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
       
 
-         <user />
-      
-    </div>
+
+      </>
   )
 }
 
