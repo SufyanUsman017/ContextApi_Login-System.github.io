@@ -1,0 +1,55 @@
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f7fa; /* Light wrapper background */
+  }
+
+  /* Profile card styling */
+  .profile-card {
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Colorful gradient */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  /* Rounded profile image */
+  .profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Name and data styling */
+  .profile-card h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  /* Additional user information */
+  .profile-card p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  /* Animation for fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
