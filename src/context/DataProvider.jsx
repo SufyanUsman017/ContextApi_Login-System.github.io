@@ -7,12 +7,16 @@ const mainContext =  createContext();
  
 export default function DataProvider({children}) {
 
-    const [ name ,setName ] = useState("Sufyan");
+    const [ users ,setUsers ] = useState([{
+      name:'Sufyan',
+      userName:'Sufyan1',
+      password:'11111'
+  }]);
 
 
   return (
 
-    <mainContext.Provider  value={{name,setName}}  >
+    <mainContext.Provider  value={{users,setUsers}}  >
 
         {children}
 

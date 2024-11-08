@@ -1,0 +1,131 @@
+.form-wrapper {
+    background-image: url('https://images.pexels.com/photos/2611690/pexels-photo-2611690.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  /* Signup form container */
+  .signup-form {
+    background-color: rgba(255, 255, 255, 0.822);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  /* Form Title */
+  .signup-form h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  /* Input fields styling with icons */
+  .form-control {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .form-control label {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .form-control input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Extra padding for icon space */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  /* Input focus effect */
+  .form-control input:focus {
+    border-color: #00bcd4;
+    box-shadow: 0px 0px 8px rgba(0, 188, 212, 0.3);
+  }
+
+  /* Icon inside input fields */
+  .form-control i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 18px;
+    pointer-events: none; /* Prevent icon from blocking input clicks */
+  }
+
+  /* Button styling */
+  .signup-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: slideUp 1s ease-in-out;
+  }
+
+  .signup-btn:hover {
+    background-color: #008c9e;
+  }
+  .link-last{
+    color: #555;
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Responsive design */
+  @media (max-width: 500px) {
+    .signup-form {
+      padding: 20px;
+    }
+    .signup-form h2 {
+      font-size: 24px;
+    }
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      Opacity: 0;
+      Transform: translateY(20px);
+    }
+    to {
+      Opacity: 1;
+      Transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      Opacity: 0;
+      Transform: translateY(30px);
+    }
+    to {
+      Opacity: 1;
+      Transform: translateY(0);
+    }
+  }
