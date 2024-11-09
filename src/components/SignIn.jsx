@@ -8,7 +8,7 @@ export default function SignIn() {
 
   const [loginName,setInputLoginName] = useState();
   const [loginPassword,setInputLoginPassword] = useState();
-  const {users,setUsers,setLoginUser} = useData();
+  const {users,setUsers,setLoginUser,setLogin} = useData();
   const navigate = useNavigate();
 
   function login (){
@@ -21,6 +21,7 @@ export default function SignIn() {
       alert('user mil gya')
       navigate('/profile')
       setLoginUser(found.userName)
+      setLogin(true);
 
     }
     else{

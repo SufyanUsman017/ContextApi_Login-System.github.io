@@ -14,12 +14,13 @@ export default function DataProvider({children}) {
       profileURL :'https://images.pexels.com/photos/28918121/pexels-photo-28918121/free-photo-of-hiker-admiring-the-dolomites-in-cortina-d-ampezzo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 
   }]);
-  const [loginUser, setLoginUser] = useState();
+  const [loginUser, setLoginUser] = useState('');
+  const [login, setLogin] = useState(false);
 
 
   return (
 
-    <mainContext.Provider  value={{users,setUsers,loginUser, setLoginUser}}  >
+    <mainContext.Provider  value={{users,setUsers,loginUser, setLoginUser,login, setLogin}}  >
 
         {children}
 

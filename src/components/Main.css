@@ -1,0 +1,154 @@
+.landing-page {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    width: 100%;
+    height: 70vh;
+    background-image: url('https://images.pexels.com/photos/7014271/pexels-photo-7014271.jpeg?auto=compress&cs=tinysrgb&w=400');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 0 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .hero-section p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  /* Button styling */
+  .cta-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #333;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cta-button:hover {
+    background-color: #e6b800;
+  }
+
+  /* Features Section */
+  .features-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    margin: 40px auto;
+    justify-content: space-around;
+  }
+
+  .feature-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .about-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  /* Gallery Section */
+  .gallery-section {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .gallery-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Contact Section */
+  .contact-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .contact-section h3 {
+    margin-bottom: 20px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 36px;
+    }
+    .features-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
